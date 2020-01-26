@@ -104,7 +104,7 @@ namespace SillyBeeAssistant
         }
 
 
-        private string QueryChatBot(string query)
+        private string GetIntent(string query)
         {
             string intent = "";
             using (var httpClient = new HttpClient())
@@ -122,12 +122,6 @@ namespace SillyBeeAssistant
                 }
                 return intent;
             }
-        }
-
-        private string GetIntent(string query)
-        {
-            Console.WriteLine(query);
-            return QueryChatBot(Console.ReadLine());
         }
 
         private string GetNextAction(string query, string intent)
