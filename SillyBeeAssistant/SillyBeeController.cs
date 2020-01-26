@@ -61,7 +61,55 @@ namespace SillyBeeAssistant
         {
             var response = new SillyBeeResponse();
             var intent = GetIntent(query);
-            var nextAction = GetNextAction(query, intent);
+            return intent;
+            //var nextAction = GetNextAction(query, intent);
+            //if (nextAction == END)
+            //{
+            //    response.command = END;
+            //    response.commandType = "action";
+            //    return JsonConvert.SerializeObject(response);
+            //}
+            //if (q.Contains(nextAction))
+            //{
+            //    response.command = nextAction;
+            //    response.commandType = "query";
+            //    return JsonConvert.SerializeObject(response);
+            //}
+            //if (a.Contains(nextAction))
+            //{
+            //    response.commandType = "query";
+            //    if (nextAction == a[1])
+            //    {
+            //        response.command = "Congratulations! Your account has been added and your AUM has increased by 15%. We are able to offer you a better rate - do you like the new deal?";
+            //        return JsonConvert.SerializeObject(response);
+            //    }
+            //    if (nextAction == a[2])
+            //    {
+            //        response.command = "Congratulations! Your documents have been collected and your application has been submitted?";
+            //        return JsonConvert.SerializeObject(response);
+            //    }
+            //    if (nextAction == a[2])
+            //    {
+            //        response.command = "Great choice! You will now be redirected to our search page!";
+            //        return JsonConvert.SerializeObject(response);
+            //    }
+            //    if (nextAction == a[3])
+            //    {
+            //        response.command = "Calling the advisor!";
+            //        return JsonConvert.SerializeObject(response);
+            //    }
+            //}
+            //response.command = UNSURE;
+            //response.commandType = "query";
+            //return JsonConvert.SerializeObject(response);
+        }
+
+        public string Post(SillyBeeRequest request)
+        {
+            var response = new SillyBeeResponse();
+
+            var intent = GetIntent(request.response);
+            var nextAction = GetNextAction(request.query, intent);
             if (nextAction == END)
             {
                 response.command = END;
@@ -102,7 +150,6 @@ namespace SillyBeeAssistant
             response.commandType = "query";
             return JsonConvert.SerializeObject(response);
         }
-
 
         private string GetIntent(string query)
         {

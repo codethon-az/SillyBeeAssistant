@@ -10,4 +10,10 @@ namespace SillyBeeAssistant
         public string commandType { get; set; }
         public string command { get; set; }
     }
+
+    public class SillyBeeRequest
+    {
+        public string query { get; set; }
+        public string response { get; set; }
+    }
 }
