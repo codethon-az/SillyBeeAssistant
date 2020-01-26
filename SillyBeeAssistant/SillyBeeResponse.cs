@@ -9,6 +9,5 @@ namespace SillyBeeAssistant
     {
         public string commandType { get; set; }
         public string command { get; set; }
-        public string displayMessage { get; set; }
     }
 }

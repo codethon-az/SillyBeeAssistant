@@ -118,7 +118,7 @@ namespace SillyBeeAssistant
                         intent = jsonResponse.SelectToken("intents[0].intent").ToString();
                     }
                     else
-                        intent = "unclear";
+                        intent = UNSURE;
                 }
                 return intent;
             }
