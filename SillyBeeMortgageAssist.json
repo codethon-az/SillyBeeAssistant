@@ -1,0 +1,1143 @@
+{
+  "luis_schema_version": "6.0.0",
+  "intents": [
+    {
+      "name": "Add account or document",
+      "features": []
+    },
+    {
+      "name": "Buy It",
+      "features": []
+    },
+    {
+      "name": "Happy with Finance",
+      "features": []
+    },
+    {
+      "name": "Like It",
+      "features": []
+    },
+    {
+      "name": "None",
+      "features": []
+    },
+    {
+      "name": "Not buy it",
+      "features": []
+    },
+    {
+      "name": "Not happy with finance",
+      "features": []
+    },
+    {
+      "name": "Not like it",
+      "features": []
+    },
+    {
+      "name": "Snapt It",
+      "features": []
+    },
+    {
+      "name": "Thinking",
+      "features": []
+    },
+    {
+      "name": "Utilities.Confirm",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Confirm"
+      },
+      "features": []
+    },
+    {
+      "name": "Utilities.Escalate",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Escalate"
+      },
+      "features": []
+    },
+    {
+      "name": "Utilities.Help",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Help"
+      },
+      "features": []
+    },
+    {
+      "name": "Utilities.Reject",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Reject"
+      },
+      "features": []
+    },
+    {
+      "name": "Utilities.StartOver",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "StartOver"
+      },
+      "features": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "Calendar.Subject",
+      "children": [],
+      "inherits": {
+        "domain_name": "Calendar",
+        "model_name": "Subject"
+      },
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "Utilities.DirectionalReference",
+      "children": [],
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "DirectionalReference"
+      },
+      "roles": [],
+      "features": []
+    }
+  ],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [],
+  "prebuiltEntities": [
+    {
+      "name": "number",
+      "roles": []
+    },
+    {
+      "name": "ordinal",
+      "roles": []
+    }
+  ],
+  "utterances": [
+    {
+      "text": "alright",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "any help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "any other houses?",
+      "intent": "Snapt It",
+      "entities": []
+    },
+    {
+      "text": "back to the beginning",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "beautiful place",
+      "intent": "Like It",
+      "entities": []
+    },
+    {
+      "text": "can i talk to a person",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "can you help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "can you help me",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "clear and start again",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "come om",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "come on",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "come on baby",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "confirm",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "contact support",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "contact the customer service",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "cool dwellings",
+      "intent": "Like It",
+      "entities": []
+    },
+    {
+      "text": "could you start it over",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "customer service",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "do it",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "do me a favor",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "don't know yet",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "fine",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "give me a favor",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "give me some help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "go ahead",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "go for it",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "great",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "hmmm",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "how can i get it",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "how to do it",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "human service",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "i am interested",
+      "intent": "Like It",
+      "entities": []
+    },
+    {
+      "text": "i am intersted",
+      "intent": "Like It",
+      "entities": []
+    },
+    {
+      "text": "i can afford it",
+      "intent": "Happy with Finance",
+      "entities": []
+    },
+    {
+      "text": "i can manage the money",
+      "intent": "Happy with Finance",
+      "entities": []
+    },
+    {
+      "text": "i can't afford it",
+      "intent": "Not happy with finance",
+      "entities": []
+    },
+    {
+      "text": "i don't know",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "i don't like it",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "i don't like this",
+      "intent": "Not like it",
+      "entities": []
+    },
+    {
+      "text": "i don't need",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "i don't understand",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "i don't want it",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "i don't want to buy it",
+      "intent": "Not buy it",
+      "entities": []
+    },
+    {
+      "text": "i have more than one",
+      "intent": "Add account or document",
+      "entities": []
+    },
+    {
+      "text": "i like the house",
+      "intent": "Like It",
+      "entities": []
+    },
+    {
+      "text": "i need a person",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "i need manual customer service",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "i need real human help",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "i need some assistance",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "i need some help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "i need support",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "i reject",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "i want to buy it",
+      "intent": "Buy It",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to a human",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to a real human",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "i would like to guy it",
+      "intent": "Buy It",
+      "entities": []
+    },
+    {
+      "text": "im late",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i'm sure",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "is there any help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "is there any person i can talk to",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "is there any real human",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "is there any real person",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "it's fine",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "it's too expensive",
+      "intent": "Not happy with finance",
+      "entities": []
+    },
+    {
+      "text": "just do it",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "kind of",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "later",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "let's add it",
+      "intent": "Add account or document",
+      "entities": []
+    },
+    {
+      "text": "let's add them",
+      "intent": "Add account or document",
+      "entities": []
+    },
+    {
+      "text": "let's bring it in",
+      "intent": "Add account or document",
+      "entities": []
+    },
+    {
+      "text": "let's do it",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "lets move on",
+      "intent": "Buy It",
+      "entities": []
+    },
+    {
+      "text": "lets see",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "like to buy the house",
+      "intent": "Buy It",
+      "entities": []
+    },
+    {
+      "text": "look again",
+      "intent": "Snapt It",
+      "entities": []
+    },
+    {
+      "text": "look for more houses",
+      "intent": "Snapt It",
+      "entities": []
+    },
+    {
+      "text": "looking for something else",
+      "intent": "Not like it",
+      "entities": []
+    },
+    {
+      "text": "maybe",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "money looks good",
+      "intent": "Happy with Finance",
+      "entities": []
+    },
+    {
+      "text": "nah",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "negative",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "never",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "nice",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "nice digs",
+      "intent": "Like It",
+      "entities": []
+    },
+    {
+      "text": "no",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no doubt",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "no i don't want that",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no later",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no leave it",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no more no",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no no",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no no no",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no no thank you",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no not that one",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no reject it",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no thank you",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no thanks",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no way",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "no wrong",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "nope",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "not",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "not at all",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "not even close",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "not even close to what i want",
+      "intent": "Not like it",
+      "entities": []
+    },
+    {
+      "text": "not exactly",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "not interested",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "not now",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "not quite",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "not ready to buy now",
+      "intent": "Not buy it",
+      "entities": []
+    },
+    {
+      "text": "not right now",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "not sure",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "not that",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "nothing much",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "of course",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "oh no",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "oh yeah",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "oh yes",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "ok",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "ok for now",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "okay",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "open help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "perfect",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "perfect thank you",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "perhaps",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "please begin again",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "please help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "proceed to buy",
+      "intent": "Buy It",
+      "entities": []
+    },
+    {
+      "text": "ready to buy",
+      "intent": "Buy It",
+      "entities": []
+    },
+    {
+      "text": "reject",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "reject it",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "reopen a new page",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "restart",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "restart it",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "right",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "right yes",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "running late",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sad",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "search again",
+      "intent": "Snapt It",
+      "entities": []
+    },
+    {
+      "text": "shift",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "some help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "sounds good",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "sounds good thank you",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "sounds good thanks",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "sounds good to me",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "sounds great",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "sounds perfect",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "start again",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "start it over",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "start over",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "start over it",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "start the process",
+      "intent": "Buy It",
+      "entities": []
+    },
+    {
+      "text": "sure",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "sure does",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "sure is",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "sure thing",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "sure yes",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "talk to a human",
+      "intent": "Utilities.Escalate",
+      "entities": []
+    },
+    {
+      "text": "terrible",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "terrifico",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "thank you very much",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "thank you yes",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "that is correct",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "that is right",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "that right",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "that sounds good",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "that's a good deal",
+      "intent": "Happy with Finance",
+      "entities": []
+    },
+    {
+      "text": "that's all",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "that's fine",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "this is a good house",
+      "intent": "Like It",
+      "entities": []
+    },
+    {
+      "text": "this is bad",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "this is cheap",
+      "intent": "Happy with Finance",
+      "entities": []
+    },
+    {
+      "text": "this is cool",
+      "intent": "Like It",
+      "entities": []
+    },
+    {
+      "text": "this is good",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "this is not what i searched",
+      "intent": "Not like it",
+      "entities": []
+    },
+    {
+      "text": "this is shabby",
+      "intent": "Not like it",
+      "entities": []
+    },
+    {
+      "text": "too much money",
+      "intent": "Not happy with finance",
+      "entities": []
+    },
+    {
+      "text": "turn over a new leaf",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "ugh",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "ugly",
+      "intent": "Utilities.Reject",
+      "entities": []
+    },
+    {
+      "text": "uh huh",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "very good",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "what rubbish is this",
+      "intent": "Not like it",
+      "entities": []
+    },
+    {
+      "text": "what should i do",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "who can help me",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "whoopee",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "will buy it later",
+      "intent": "Not buy it",
+      "entities": []
+    },
+    {
+      "text": "will think about it",
+      "intent": "Thinking",
+      "entities": []
+    },
+    {
+      "text": "within budget",
+      "intent": "Happy with Finance",
+      "entities": []
+    },
+    {
+      "text": "wow that's a lot",
+      "intent": "Not happy with finance",
+      "entities": []
+    },
+    {
+      "text": "ya",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah baby",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah bro",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah buddy",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah cool",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah go ahead",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah go for it",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah good",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yes",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "SillyBeeMortgageAssist",
+  "desc": "Chatbot to guide through mortgage process",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [],
+  "regex_features": [],
+  "patterns": [
+    {
+      "pattern": "^(yes|sure)[[,]i want (that|the ({Utilities.DirectionalReference}|{ordinal}) ({number}|one))]",
+      "intent": "Utilities.Confirm"
+    }
+  ],
+  "settings": []
+}

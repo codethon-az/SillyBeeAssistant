@@ -1,0 +1,324 @@
+
+> LUIS application information
+> !# @app.name = SillyBeeMortgageAssist
+> !# @app.desc = Chatbot to guide through mortgage process
+> !# @app.versionId = 0.1
+> !# @app.culture = en-us
+> !# @app.luis_schema_version = 6.0.0
+
+
+> # Intent definitions
+
+## Add account or document
+- i have more than one
+- let's add it
+- let's add them
+- let's bring it in
+
+
+@ intent Add account or document
+
+## Buy It
+- i want to buy it
+- i would like to guy it
+- lets move on
+- like to buy the house
+- proceed to buy
+- ready to buy
+- start the process
+
+
+@ intent Buy It
+
+## Happy with Finance
+- i can afford it
+- i can manage the money
+- money looks good
+- that's a good deal
+- this is cheap
+- within budget
+
+
+@ intent Happy with Finance
+
+## Like It
+- beautiful place
+- cool dwellings
+- i am interested
+- i am intersted
+- i like the house
+- nice digs
+- this is a good house
+- this is cool
+
+
+@ intent Like It
+
+## None
+- im late
+- running late
+
+
+@ intent None
+
+## Not buy it
+- i don't want to buy it
+- not ready to buy now
+- will buy it later
+
+
+@ intent Not buy it
+
+## Not happy with finance
+- i can't afford it
+- it's too expensive
+- too much money
+- wow that's a lot
+
+
+@ intent Not happy with finance
+
+## Not like it
+- i don't like this
+- looking for something else
+- not even close to what i want
+- this is not what i searched
+- this is shabby
+- what rubbish is this
+
+
+@ intent Not like it
+
+## Snapt It
+- any other houses?
+- look again
+- look for more houses
+- search again
+
+
+@ intent Snapt It
+
+## Thinking
+- don't know yet
+- hmmm
+- i don't know
+- kind of
+- later
+- lets see
+- maybe
+- not sure
+- perhaps
+- uh huh
+- will think about it
+
+
+@ intent Thinking
+
+> !# @intent.inherits = name : Utilities.Confirm; domain_name : Utilities; model_name : Confirm
+
+## Utilities.Confirm
+- alright
+- come om
+- come on
+- come on baby
+- confirm
+- do it
+- fine
+- go ahead
+- go for it
+- great
+- i'm sure
+- it's fine
+- just do it
+- let's do it
+- nice
+- no doubt
+- of course
+- oh yeah
+- oh yes
+- ok
+- ok for now
+- okay
+- perfect
+- perfect thank you
+- right
+- right yes
+- sounds good
+- sounds good thank you
+- sounds good thanks
+- sounds good to me
+- sounds great
+- sounds perfect
+- sure
+- sure does
+- sure is
+- sure thing
+- sure yes
+- terrifico
+- thank you very much
+- thank you yes
+- that is correct
+- that is right
+- that right
+- that sounds good
+- that's all
+- that's fine
+- this is good
+- very good
+- whoopee
+- ya
+- yeah
+- yeah baby
+- yeah bro
+- yeah buddy
+- yeah cool
+- yeah go ahead
+- yeah go for it
+- yeah good
+- yes
+- ^(yes|sure)[[,]i want (that|the ({@Utilities.DirectionalReference}|{ordinal}) ({number}|one))]
+
+
+@ intent Utilities.Confirm
+
+> !# @intent.inherits = name : Utilities.Escalate; domain_name : Utilities; model_name : Escalate
+
+## Utilities.Escalate
+- can i talk to a person
+- contact support
+- contact the customer service
+- customer service
+- human service
+- i need a person
+- i need manual customer service
+- i need real human help
+- i need support
+- i want to talk to a human
+- i want to talk to a real human
+- is there any person i can talk to
+- is there any real human
+- is there any real person
+- shift
+- talk to a human
+
+
+@ intent Utilities.Escalate
+
+> !# @intent.inherits = name : Utilities.Help; domain_name : Utilities; model_name : Help
+
+## Utilities.Help
+- any help
+- can you help
+- can you help me
+- do me a favor
+- give me a favor
+- give me some help
+- help
+- how can i get it
+- how to do it
+- i don't understand
+- i need help
+- i need some assistance
+- i need some help
+- is there any help
+- open help
+- please help
+- some help
+- what should i do
+- who can help me
+
+
+@ intent Utilities.Help
+
+> !# @intent.inherits = name : Utilities.Reject; domain_name : Utilities; model_name : Reject
+
+## Utilities.Reject
+- i don't like it
+- i don't need
+- i don't want it
+- i reject
+- nah
+- negative
+- never
+- no
+- no i don't want that
+- no later
+- no leave it
+- no more no
+- no no
+- no no no
+- no no thank you
+- no not that one
+- no reject it
+- no thank you
+- no thanks
+- no way
+- no wrong
+- nope
+- not
+- not at all
+- not even close
+- not exactly
+- not interested
+- not now
+- not quite
+- not right now
+- not that
+- nothing much
+- oh no
+- reject
+- reject it
+- sad
+- terrible
+- this is bad
+- ugh
+- ugly
+
+
+@ intent Utilities.Reject
+
+> !# @intent.inherits = name : Utilities.StartOver; domain_name : Utilities; model_name : StartOver
+
+## Utilities.StartOver
+- back to the beginning
+- clear and start again
+- could you start it over
+- please begin again
+- reopen a new page
+- restart
+- restart it
+- start again
+- start it over
+- start over
+- start over it
+- turn over a new leaf
+
+
+@ intent Utilities.StartOver
+
+> # Entity definitions
+
+> !# @entity.inherits = name : Calendar.Subject; domain_name : Calendar; model_name : Subject
+
+@ ml Calendar.Subject
+
+> !# @entity.inherits = name : Utilities.DirectionalReference; domain_name : Utilities; model_name : DirectionalReference
+
+@ ml Utilities.DirectionalReference
+
+
+> # PREBUILT Entity definitions
+
+@ prebuilt number
+
+@ prebuilt ordinal
+
+
+> # Phrase list definitions
+
+
+> # List entities
+
+> # RegEx entities
+
+
